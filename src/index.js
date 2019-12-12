@@ -1,10 +1,10 @@
-var express = require("express");
-var fortune = require("./lib/fortune.js");
+const express = require("express");
+const fortune = require("./lib/fortune.js");
 const path = require("path");
-var app = express();
+const app = express();
 
 // set up handlebars view engine
-var handlebars = require("express-handlebars").create({
+const handlebars = require("express-handlebars").create({
   defaultLayout: "main"
 });
 app.engine("handlebars", handlebars.engine);
